@@ -1,0 +1,7 @@
+This paper introduces how to simplify trajecotry by finding the shortest path as well as querying the sunshine information to get benefits from it. This algorithm called sunshine-based trajectory simplification(STS) is to remove the redundant points which carry little sunshine information. Because of the trip comfort, driving safety and energy collection, part of them are expected for us, but thers are not our requirements. 
+1. This system is sensitive to the direction of the trajectory, and the direction of the driving car and the sunshine constrain this information. So this paper set two angles on the left or right of the path, and either of part is under sunshine. When removing the redundant points, the simplified trajctory produce the loss compared with original trajectory, and this algorithm accumulate the error to judge whether to remove these points. 
+2. This paper assume that all the segments are valued 1, to find the shortest path, this algorithm find the points near the end point as close as possible.
+
+In a word, STS is highly robust and accurate, it didn't only lose much information, but also keep a high accuracy. But from my point, I didn't gain more from this paper, maybe some significant knowledge isn't understood by me. I am still not aware of how the sunshine can impact the trajectory, and the benefits mentioned from this paper is unpratical.
+
+Experiment: 1. Baseline methods. 2. Change parameters.
